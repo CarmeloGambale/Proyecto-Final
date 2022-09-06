@@ -1,0 +1,10 @@
+%black{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+header{
+    @extend %black;
+    padding: 10px;
+    text-align: center;
+}

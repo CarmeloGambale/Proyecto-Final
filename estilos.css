@@ -13,31 +13,26 @@ header {
   padding: 10px;
   text-align: center;
 }
-
-.logo {
+header .logo {
   float: left;
   width: 500px;
 }
-
-.barra {
+header .barra {
   float: right;
 }
-
-.barra ul li {
+header .barra ul li {
   display: inline-block;
   list-style: none;
   margin-left: 20px;
   margin-top: 40px;
   font-family: "Roboto Condensed", sans-serif;
 }
-
-.barra a {
+header .barra a {
   text-decoration: none;
   color: white;
   font-size: 26px;
 }
-
-.barra a:hover {
+header .barra a:hover {
   color: rgb(114, 0, 255);
   transition: 1s;
 }
