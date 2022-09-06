@@ -12,7 +12,8 @@ header {
     width: 100%;
     height: 150px;
     padding: 10px;
-
+    text-align: center;
+   
 }
 
 .logo {
@@ -22,13 +23,13 @@ header {
 
 .barra {
     float: right;
-
 }
 
 .barra ul li {
-    list-style: none;
     display: inline-block;
-    margin-left: 15px;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 40px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -36,8 +37,6 @@ header {
     text-decoration: none;
     color: white;
     font-size: 26px;
-
-
 }
 
 .barra a:hover {
@@ -46,37 +45,76 @@ header {
 }
 
 /*Fin header*/
-main{
+main {
     width: 100%;
-    height: 100%;
+    height: 1000px;
 }
-h1{
+
+h1 {
     font-weight: 1000;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 32px;
 }
+
 /*Inicio carrousel*/
 .carousel-inner img {
     width: 100%;
     height: 100%;
-  }
-.carousel-item{
+}
+
+.carousel-item {
     width: 100%;
 
 }
-  /*Fin carrousel*/
-.main{
-    background-image: url(../img/quien\ es\ somos.jpg);
+/*Fin carrousel*/
+/*Inicio Noticias*/
+.titulo2{
     width: 100%;
-    height: 100vh;
+    text-align: center;
+    font-weight: 1000;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.noticias{
+    width: 100%;
+    height: 500px;
+    
+}
+.noticia1{
+    
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.noticia1 img{
+    height: 350px;
+    width: 350px;
+}
+.texto1{
+    border: rgb(114, 0, 255) solid 1px;
+    padding: 100px;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+/*Fin Noticias*/
+.main {
+    background-image: url(../img/quien\ es\ somos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.item-texto{
+
+.item-texto {
     margin-bottom: 50px;
     height: 100px;
     width: 50%;
@@ -84,14 +122,47 @@ h1{
     border-radius: 2px solid #000;
     color: white;
 }
-.logo2{
+
+.logo2 {
     float: right;
     height: 200px;
     width: 50%;
     display: flex;
     justify-content: center;
 }
-/*Grids html Productos  */
+/* Catalogo Productos*/
+.container{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+    font-weight: 1000;
+    margin: 30px;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.caja img{
+    width: 280px;
+    height: 280px;
+}
+.caja{      
+    margin: 50px;
+}
+.caja p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 1000;
+}
+.caja .img:hover{
+    transition: 1s;
+
+}
+/*Grids html Marcas  */
 .contenedor {
     align-content: center;
     height: auto;
@@ -100,10 +171,11 @@ h1{
     display: grid;
     grid-area: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
     grid-gap: 20px;
     padding: 20px;
-    margin-top: 100px;
+    
+    
 
 }
 
@@ -119,6 +191,7 @@ h1{
     filter: grayscale(0%);
     transition: all 0.7s;
 }
+
 .item8 {
     background-image: url(../img/aorus-logo.png);
     background-size: cover;
@@ -182,31 +255,32 @@ h1{
     grid-column: 3/5;
     grid-row: 4/5;
 }
-.formulario{
+
+.formulario {
     background-image: url(../img/quien\ es\ somos.jpg);
+    background-size: cover;
 }
-h2{
+
+h2 {
     color: white;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 32px;
 }
+
 form {
     height: 100vh;
-    color:white;
+    color: white;
     font-size: 32px;
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 50px;
-    border-radius: 5px;
     padding: 10px;
     text-align: center;
 }
+
 /*Inicio footer*/
 footer {
-    position: static;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: sticky;  
     background: #000;
     height: 200px;
     width: 100vw;
@@ -268,11 +342,11 @@ footer {
 }
 
 .footer-bottom {
+    position: sticky;
     background: #000;
     height: auto;
     width: 100vw;
     padding: 20px;
-    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -284,8 +358,8 @@ footer {
 }
 
 .footer-bottom p a {
-    color: #44bae8;
-    font-size: 16px;
+    color: rgb(114, 0, 255);
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -319,6 +393,7 @@ footer {
     color: rgb(114, 0, 255);
 }
 
+/*Fin footer*/
 @media (max-width:400px) {
     .footer-menu ul {
         display: flex;
@@ -327,4 +402,94 @@ footer {
     }
 }
 
-/*Fin footer*/
+@media only screen and (min-width:368px) and (max-width:768px) {
+    .gridContainer {
+        width: 100%;
+        height: auto;
+        padding: auto;
+    }
+
+    /*Grids html Productos  */
+    .item8 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .item9 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .item10 {
+        grid-column: 3/5;
+        grid-row: 2/4;
+    }
+
+    .item11 {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+
+    .item12 {
+        grid-column: 1/5;
+        grid-row: 5/7;
+    }
+
+    .item13 {
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+
+    .item14 {
+        grid-column: 3/5;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 150px);
+        grid-template-areas:
+            "img1 img2 img3 img3"
+            "img1 img4 img5 img6"
+            "img7 img4 img5 img6";
+    }
+
+    .item8 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .item9 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .item10 {
+        grid-column: 3/5;
+        grid-row: 2/4;
+        ;
+    }
+
+    .item11 {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+
+    .item12 {
+        grid-column: 1/5;
+        grid-row: 5/7;
+    }
+
+    .item13 {
+        grid-column: 2/3;
+        grid-row: 3/5;
+        ;
+    }
+
+    .item14 {
+        grid-column: 3/5;
+        grid-row: 4/5;
+    }
+}
