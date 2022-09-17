@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontused;
+
+    &::selection {
+        background-color: rgb(128, 24, 255);
+        color: map-get($palette, colorbody);
+    }
+
+}

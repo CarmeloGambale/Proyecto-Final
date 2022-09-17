@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+$fontused: "Roboto Condensed", sans-serif;
+
+$colornav: #000;
+$colorbody: #fff;
+$colorFooter: #000;
+
+/*MAP aplico en index*/
+
+$palette: (
+  colornav: #000,
+
+  colorbody: #fff,
+
+  colorFooter: #000,
+);
+
+/* .sss{
+  background-color: map-get($palette, colorBody);
+} */
+
+/*EXTEND aplicado en .div__text y en el newsletter*/
+
+/* @extend ; */
+
+/*MIXIN*/
+
+/*aplicado en _pagmarcas.scss card__info y en _index.scss newsletter*/
+
+@mixin DflexCenter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}

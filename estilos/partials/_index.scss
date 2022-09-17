@@ -1,0 +1,45 @@
+.navbar {
+  background-color: map-get($palette, colornav);
+
+  .logo {
+    width: 200px;
+  }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicios {
+  width: 100%;
+
+  .titulo_index {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+main {
+  .titulo_index2 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+  }
+
+  .titulo_index3 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+  }
+
+  .noticia1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .noticia1img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+}
