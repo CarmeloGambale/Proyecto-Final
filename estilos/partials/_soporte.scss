@@ -2,7 +2,22 @@
     background-image: url(/img/soporte.jpg);
     background-position: center;
     background-size: cover;
+    
+    .titulo__form{
+        text-align: center;
+        color: map-get($palette, colorbody); 
+        @extend .texto__nosotros1;
+    }   
     form{
         height: 100vh;
-    }
+        @include DflexCenter;
+        label{
+            border-radius: 2px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: map-get($palette, colorbody); 
+            font-size: 24px;
+            font-family: $fontused;
+        }       
+    
+}  
 }

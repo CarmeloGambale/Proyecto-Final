@@ -1,3 +1,9 @@
+.catalogo__titulo{
+    text-align: center;
+    font-family: $fontused;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 .card__catalogo{
     padding: 20px;
     display: flex;
@@ -45,35 +51,34 @@
     .card__catalogo{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-height: 900px;
-        margin-bottom: 90rem;
+        max-height: 100px;  
     }   
 }
 @media only screen and (max-width: 600px){
     .card__catalogo {
         grid-template-columns: repeat(3, 1fr);
-        max-height: 900px;
-        margin-bottom: 50rem;
+        min-height: 900px;
+        margin-bottom: 70rem;
       }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .card__catalogo {
       grid-template-columns: repeat(3, 1fr);
       max-height: 900px;
-      margin-bottom: 50rem;
+      margin-bottom: 40rem;
     }
 }
 @media only screen and (min-width: 768px) {
     .card__catalogo{
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 250px);
-      margin-bottom: 30rem;
+      margin-bottom: 70rem;
     }
 }
 @media only screen and (min-width: 1200px) {
     .card__catalogo{
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 250px);
-      margin-bottom: 10rem;
+      margin-bottom: 50rem;
     }
 }

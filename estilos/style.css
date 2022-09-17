@@ -8,7 +8,9 @@
 .logo {
   width: 200px;
 }
-
+.servicios{
+  padding: 2rem;
+}
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -18,7 +20,7 @@
   width: 100%;
 }
 
-.main {
+/*.main {
   width: 100%;
 }
 
@@ -165,7 +167,7 @@
 /*Fin Marcas*/
 /*Inicia footer*/
 footer {
-  position: static;
+  position: relative;
   bottom: 0;  
   background: #000;
   width: 100%;
@@ -227,15 +229,7 @@ footer {
 }
 
 /*Termina el footer footer*/
-@media (max-width: 700px) {
-  .noticia1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-}
+
 @media only screen and (min-width: 360px) {
   .galeria {
     grid-template-columns: 1fr 1fr;

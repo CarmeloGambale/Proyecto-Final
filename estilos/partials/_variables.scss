@@ -26,13 +26,16 @@ $palette: (
 
 /*MIXIN*/
 
-/*aplicado en _pagmarcas.scss card__info y en _index.scss newsletter*/
-
 @mixin DflexCenter {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
+}
+@mixin DflexCenter2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
